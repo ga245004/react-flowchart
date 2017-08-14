@@ -1,14 +1,14 @@
 const React = require('react');
+const { Layer, Rect, Stage } = require('react-konva');
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <p>
-          This React projec rks incluhhjhjding <span className="redBg">module</span> local styles.
-        </p>
-        <p>En jnjoy!</p>
-      </div>
+      <Stage width={700} height={700}>
+        <Layer>
+          <Rect x={10} y={10} width={50} height={50} fill={'red'} shadowBlur={10} />
+        </Layer>
+      </Stage>
     );
   }
 }
